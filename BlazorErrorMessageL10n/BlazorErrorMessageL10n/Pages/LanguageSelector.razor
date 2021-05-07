@@ -1,0 +1,10 @@
+﻿@inherits LanguageSelectorBase
+
+<div class="col-md-3">
+    <select class="form-control" @bind="Culture">
+        @foreach (var language in supportedLanguages)
+        {
+            <option value="@language">@language.DisplayName</option>
+        }
+    </select>
+</div>
